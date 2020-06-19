@@ -11,6 +11,7 @@ package Modelo;
  */
 public class Persona {
     private int idpersona;
+    private String cedula;
     private String nombre;
     private String apaterno;
     private String amaterno;
@@ -23,8 +24,9 @@ public class Persona {
     public Persona() {
     }
 
-    public Persona(int idpersona, String nombre, String apaterno, String amaterno, String tipo_documento, String num_documento, String direccion, String telefono, String email) {
+    public Persona(int idpersona,String cedula,String nombre, String apaterno, String amaterno, String tipo_documento, String num_documento, String direccion, String telefono, String email) {
         this.idpersona = idpersona;
+        this.cedula=cedula;
         this.nombre = nombre;
         this.apaterno = apaterno;
         this.amaterno = amaterno;
@@ -42,7 +44,12 @@ public class Persona {
     public void setIdpersona(int idpersona) {
         this.idpersona = idpersona;
     }
-
+    public String getCedula() {
+        return cedula;
+    }
+    public void setCedula(String cedula) {
+        this.cedula = cedula;
+    }
     public String getNombre() {
         return nombre;
     }
@@ -98,11 +105,9 @@ public class Persona {
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
-
     public String getEmail() {
         return email;
     }
-
     public void setEmail(String email) {
         this.email = email;
     }   
