@@ -17,7 +17,7 @@ public class ControladorCliente {
     private SortedMap listaPersona;
     int cont;
 
-    public ControladorPersona() 
+    public ControladorCliente() 
     {
         listaPersona = new TreeMap();
         cont = 1;
