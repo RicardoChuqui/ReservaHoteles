@@ -14,7 +14,7 @@ public class Cliente extends Persona{
 
     public Cliente() {
     }
-
+    
     public Cliente(String codigo_cliente) {
         this.codigo_cliente = codigo_cliente;
     }

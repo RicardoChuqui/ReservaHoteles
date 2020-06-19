@@ -11,4 +11,20 @@ package Controlador;
  */
 public class ControladorRecepcionista {
     
+    public void registrarRecepcionista() {
+
+    }
+
+    public void eliministrarRecepcionista() {
+
+    }
+
+    public void buscarRecepcionista() {
+
+    }
+
+    public void actualizarRecepcionista() {
+
+    }
+    
 }
