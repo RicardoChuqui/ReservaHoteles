@@ -11,7 +11,6 @@ import java.util.TreeMap;
 public class ControladorRecepcionista {
 
     private int id;
-
     private SortedMap listaRecepcionista;
     int cont;
 
