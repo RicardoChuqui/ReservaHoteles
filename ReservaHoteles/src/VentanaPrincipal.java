@@ -6,7 +6,7 @@
 
 /**
  *
- * @author Andres Guaicha, Diego Castro
+ * @author Andres Guaicha, Diego Castro, Ricardo Chuqui
  */
 public class VentanaPrincipal extends javax.swing.JFrame {
 
