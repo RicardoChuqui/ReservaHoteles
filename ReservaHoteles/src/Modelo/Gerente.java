@@ -9,6 +9,22 @@ package Modelo;
  *
  * @author jhonn
  */
-public class Gerente {
+public class Gerente extends Persona{
+    private String codigo_gerente;
+
+    public Gerente() {
+    }
+
+    public Gerente(String codigo_gerente) {
+        this.codigo_gerente = codigo_gerente;
+    }
+
+    public String getCodigo_gerente() {
+        return codigo_gerente;
+    }
+
+    public void setCodigo_cliente(String codigo_cliente) {
+        this.codigo_gerente = codigo_gerente;
+    }
     
 }
