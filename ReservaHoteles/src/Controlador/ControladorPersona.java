@@ -6,6 +6,8 @@
 package Controlador;
 
 import Modelo.Persona;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
@@ -14,54 +16,27 @@ import java.util.TreeMap;
  * @author jhonn
  */
 public class ControladorPersona {
-    
-    private int id;
-    private SortedMap listaPersona;
-    int cont;
+  private List<Persona> listaPersona;
 
     public ControladorPersona() 
     {
-        listaPersona = new TreeMap();
-        cont = 1;
+        listaPersona = new ArrayList<>();
+    }
+    /**
+     * Metodo que me permite crear una persona
+     * @param persona 
+     */
+    
+    public void crear(Persona persona)
+    {
+        listaPersona.add(persona); 
     }
 
-    public SortedMap getListaPersona() {
+    public List<Persona> getListaPersona() {
         return listaPersona;
     }
 
-    public void setListaPersona(SortedMap listaPersona) {
+    public void setListaPersona(List<Persona> listaPersona) {
         this.listaPersona = listaPersona;
-    }
-    
-    public void crear(int codigo, Persona l) {
-        listaPersona.put(codigo, l);
-        cont++;
-    }
-
-    public void actualizar(int codigo, Persona nuevo) {
-        listaPersona.replace(codigo, nuevo);
-    }
-    public Persona leer(int codigo){
-        Persona l = (Persona)listaPersona.get(codigo);
-        return l;
-    }
-    public void eliminar (int codigo){
-        listaPersona.remove(codigo);
-    }
-
-    public int getCont() {
-        return cont;
-    }
-
-    public void setCont(int cont) {
-        this.cont = cont;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }   
+    }    
 }

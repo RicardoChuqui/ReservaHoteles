@@ -13,8 +13,7 @@ public class Recepcionista extends Persona {
     
 
     public Recepcionista() {
-        
-        
+               
     }
 
     public int getId() {
