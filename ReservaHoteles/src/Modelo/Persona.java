@@ -15,23 +15,17 @@ public class Persona {
     private String nombre;
     private String apaterno;
     private String amaterno;
-    private String tipo_documento;
-    private String num_documento;
     private String direccion;
     private String telefono;
     private String email;
-
     public Persona() {
     }
-
-    public Persona(int idpersona,String cedula,String nombre, String apaterno, String amaterno, String tipo_documento, String num_documento, String direccion, String telefono, String email) {
+    public Persona(int idpersona,String cedula,String nombre, String apaterno, String amaterno, String direccion, String telefono, String email) {
         this.idpersona = idpersona;
         this.cedula=cedula;
         this.nombre = nombre;
         this.apaterno = apaterno;
         this.amaterno = amaterno;
-        this.tipo_documento = tipo_documento;
-        this.num_documento = num_documento;
         this.direccion = direccion;
         this.telefono = telefono;
         this.email = email;
@@ -73,23 +67,6 @@ public class Persona {
     public void setAmaterno(String amaterno) {
         this.amaterno = amaterno;
     }
-
-    public String getTipo_documento() {
-        return tipo_documento;
-    }
-
-    public void setTipo_documento(String tipo_documento) {
-        this.tipo_documento = tipo_documento;
-    }
-
-    public String getNum_documento() {
-        return num_documento;
-    }
-
-    public void setNum_documento(String num_documento) {
-        this.num_documento = num_documento;
-    }
-
     public String getDireccion() {
         return direccion;
     }
