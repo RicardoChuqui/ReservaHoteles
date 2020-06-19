@@ -1,10 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Controlador;
 
+import Modelo.Cliente;
+import Modelo.Persona;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
@@ -14,10 +12,11 @@ import java.util.TreeMap;
  */
 public class ControladorCliente {
     
+    private int id;
     private SortedMap listaPersona;
     int cont;
 
-    public ControladorPersona() 
+    public ControladorCliente() 
     {
         listaPersona = new TreeMap();
         cont = 1;
@@ -31,16 +30,16 @@ public class ControladorCliente {
         this.listaPersona = listaPersona;
     }
     
-    public void crear(int codigo, Persona l) {
+    public void crear(int codigo, Cliente l) {
         listaPersona.put(codigo, l);
         cont++;
     }
 
-    public void actualizar(int codigo, Persona nuevo) {
+    public void actualizar(int codigo, Cliente nuevo) {
         listaPersona.replace(codigo, nuevo);
     }
-    public Persona leer(int codigo){
-        Persona l = (Persona)listaPersona.get(codigo);
+    public Cliente leer(int codigo){
+        Cliente l = (Cliente)listaPersona.get(codigo);
         return l;
     }
     public void eliminar (int codigo){
@@ -54,5 +53,15 @@ public class ControladorCliente {
     public void setCont(int cont) {
         this.cont = cont;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+    
+    
     
 }
