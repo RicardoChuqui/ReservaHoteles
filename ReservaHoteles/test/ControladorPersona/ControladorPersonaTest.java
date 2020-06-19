@@ -3,7 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package ControladorPersona;
 
+import Controlador.ControladorPersona;
+import Modelo.Persona;
+import java.util.ArrayList;
+import java.util.List;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -15,9 +20,9 @@ import static org.junit.Assert.*;
  *
  * @author jhonn
  */
-public class ControladorRecepcionistaTest {
+public class ControladorPersonaTest {
     
-    public ControladorRecepcionistaTest() {
+    public ControladorPersonaTest() {
     }
     
     @BeforeClass
@@ -39,6 +44,19 @@ public class ControladorRecepcionistaTest {
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
-    // @Test
-    // public void hello() {}
+    @Test
+    public void hello(){
+    Persona persona = new Persona();
+        ControladorPersona c=new ControladorPersona();
+         List<Persona> listaPersona=new ArrayList<>();
+        listaPersona.add(persona);
+        if (listaPersona.equals(c)) {
+            assertTrue("paso", true);
+        }else{
+        
+            assertTrue("no paso", false);
+        
+        }
+    
+    }
 }

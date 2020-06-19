@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package ControladorCliente;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -15,9 +16,9 @@ import static org.junit.Assert.*;
  *
  * @author jhonn
  */
-public class ControladorTestPersona {
+public class ControladorClienteTest {
     
-    public ControladorTestPersona() {
+    public ControladorClienteTest() {
     }
     
     @BeforeClass
